@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./tasks.js"></script>
+    <title>Task List</title>
+  </head>
+  <body>
+    <div class="container">
+      <span>
+        <header>
+          <i class="large material-icons" style="vertical-align: text-bottom"
+            >chrome_reader_mode</i
+          >
+          Task List
+        </header></span
+      >
+      <main>
+        <div class="row">
+          <div class="input-field col s12">
+            <!-- <i class="material-icons prefix">arrow</i> -->
+
+            <input
+              id="task"
+              type="text"
+              class="validate"
+              onkeypress="clickPress(event)"
+            />
+            <label for="task">Task</label>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="collection">
+            <li class="collection-item">Alvin</li>
+            <li class="collection-item">Alvin</li>
+            <li class="collection-item">Alvin</li>
+            <li class="collection-item">Alvin</li>
+          </ul>
+        </div>
+      </main>
+      <footer class="center">
+        <div class="footer-copyright">
+          <div class="container">
+            Made with <span style="color: red">❤️</span> by
+            <a href="https://schadokar.dev">schadokar</a>
+          </div>
+          <div class="container">
+            Ingredients <span> 🧪</span> html, css and
+            <a href="https://materializecss.com/">material ui</a>
+          </div>
+          <div class="container">
+            <a href="https://github.com/schadokar"
+              ><i class="material-icons">code</i></a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
